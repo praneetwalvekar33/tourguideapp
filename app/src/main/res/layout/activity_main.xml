@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_height"
+        android:orientation="horizontal"
+        android:background="@color/restaurant_color"
+        android:layout_marginBottom="8dp">
+        <ImageView
+            android:layout_width="@dimen/content_height"
+            android:layout_height="@dimen/content_height"
+            android:src="@drawable/ic_launcher_background" />
+        <TextView
+            style="@style/text_style_main"
+            android:text="@string/restaurant_category"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/important_place"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_height"
+        android:orientation="horizontal"
+        android:background="@color/important_place_color">
+        <ImageView
+            android:layout_width="@dimen/content_height"
+            android:layout_height="@dimen/content_height"
+            android:src="@drawable/ic_launcher_background" />
+        <TextView
+            style="@style/text_style_main"
+            android:text="@string/important_place_category"
+            />
+    </LinearLayout>
+</LinearLayout>

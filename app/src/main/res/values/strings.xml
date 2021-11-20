@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="restaurant_category">Restaurant</string>
+    <string name="important_place_category">Important Place</string>
+</resources>

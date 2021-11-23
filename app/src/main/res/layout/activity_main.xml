@@ -9,7 +9,11 @@
     android:background="@color/background_color"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.viewpager2.widget.ViewPager2
+        android.id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<LinearLayout
         android:id="@+id/restaurant"
         android:layout_width="match_parent"
         android:layout_height="@dimen/content_height"
@@ -39,5 +43,5 @@
             style="@style/text_style_main"
             android:text="@string/important_place_category"
             />
-    </LinearLayout>
+    </LinearLayout>-->
 </LinearLayout>

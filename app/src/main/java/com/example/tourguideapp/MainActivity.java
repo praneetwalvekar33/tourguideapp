@@ -1,6 +1,7 @@
 package com.example.tourguideapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LinearLayout restaurant=(LinearLayout) findViewById(R.id.restaurant);
+        //  Creating a ViewPager object
+        ViewPager2 viewPager =(ViewPager2) findViewById(R.id.viewpager);
+
+        //  Adapter object to show which fragment to use at each position
+        SimpleViewPagerAdapter adapter = new SimpleViewPagerAdapter(getSupportFragmentManager(), getLifecycle());
+
+        //  Setting the adapter for ViewPager2 object
+        viewPager.setAdapter(adapter);
+
+        /*LinearLayout restaurant=(LinearLayout) findViewById(R.id.restaurant);
         restaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 //  Starting the activity usings startActivity Method.
                 startActivity(importantPlaceIntent);
             }
-        });
+        });*/
     }
 }
